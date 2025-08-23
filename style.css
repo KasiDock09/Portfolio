@@ -1,0 +1,268 @@
+/* COLOR PALETTE
+    Lt Purple: rgba(182,182,227,1)
+    Med Purple: rgba(106,115,166,1)
+    Dk Purple: rgba(30,32,62,1)
+    Black: rgba(5,5,13,1)
+    White: rgba(238,238,255,1) */
+
+
+body {
+  font-family: 'montserrat-alternates', sans-serif;
+  letter-spacing: 1px;
+  background-color: rgba(5,5,13,1);
+  color: rgba(238,238,255,1);
+  font-weight: 200;
+}
+
+/* -----------NAV BAR----------- */
+.navbar-dark {
+  background-color: transparent !important;
+  background-image: linear-gradient(90deg, rgba(30,32,62,1), rgba(30,32,62,1), rgba(30,32,62,.9), rgba(30,32,62,.7), rgba(30,32,62,.9), rgba(30,32,62,1), rgba(30,32,62,1));
+}
+
+nav i {
+  padding: 20px;
+  font-size: clamp(20px, 3.5vw, 38px);
+  color: rgba(182,182,227,1);
+  transition: color .6s ease-out;
+}
+
+nav i:hover {
+  color: rgba(238,238,255,1);
+  transition: color ease .6s ease-out;
+}
+
+nav a {
+  transition: text-shadow .3s ease-out;
+  transition: transform .6s ease-out;
+}
+
+nav a:hover{                    
+  transform: scale(1.1);
+  transform: translateY(-5px);
+  transition: transform .6s ease-out;
+}
+
+nav a:active {
+  text-shadow: 0px 0px 6px rgba(182,182,227,1);
+  transition: text-shadow .3s ease-out;
+}
+
+nav li{
+  background-color: rgba(30,32,62,.5);
+  padding: 3px 10px;
+}
+  
+nav ul {
+  position: absolute;
+  right: 0px;
+  margin: 5px 5px;
+  text-align: center;
+}
+
+nav a .active {
+  text-shadow: 0px 0px 6px rgba(182,182,227,1);
+}
+
+nav .dropdown-menu {
+  background-color: rgba(30,32,62,.7);
+}
+
+nav .dropdown-menu li {
+  background-color: transparent;
+  font-size: clamp(8px, 1vw, 10px);
+  text-align: center;
+}
+
+nav .dropdown-item {
+  color: rgba(182,182,227,1);
+  width: 100%;
+}
+
+nav .dropdown-divider {
+  background-color: rgba(106,115,166,1);
+}
+
+nav .dropdown .active  {
+  background-color: transparent;
+  color: (238,238,255,1);
+  text-shadow: 0px 0px 6px rgba(182,182,227,1);
+}
+
+nav .dropdown-item:hover {
+  background-color: rgba(238,238,255,.8);
+  color: rgba(30,32,62,1);
+}
+
+
+/* -----------HOME PAGE----------- */
+main{
+  margin: 0;
+  padding: 0 10vw;
+}
+
+section {
+  padding-top: 10vh;
+}
+
+    /* -----------HERO SECTION----------- */
+header {
+  height: 100vh;
+  text-align: center; 
+  background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.7)), url("img/AdobeStock_179846954.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: rgba(238,238,255,1);
+  margin-bottom: 8vh;
+}
+
+header img {
+  width: clamp(200px, 20vw, 28vw);
+  margin: 20vh auto 0;
+  border-radius: 50%;
+  border: 1vh solid rgba(255,255,255,.3);
+}
+
+h1, h2 {
+  font-family: 'acier-bat-gris', sans-serif;
+  color: rgba(238,238,255,1);
+}
+
+header h1 {
+  font-size: clamp(30px, 8vw, 85px);
+  margin-top: 2vh;
+}
+
+header h3 {
+  font-size: clamp(14px, 3vw, 34px);
+  color: rgba(182,182,227,1);
+  font-weight: 500;
+  font-style: italic;
+ 
+}
+
+ h2 {
+  width: 60vw;
+  font-size: clamp(24px, 4.5vw, 4.5vw);
+  color: rgba(182,182,227,1);
+  margin: 0 auto 3vh;
+  padding: 2.5vh;
+  border: 1px solid ;
+  border-image: linear-gradient(90deg, rgba(5,5,13,1), rgba(106,115,166,1), rgba(238,238,255,1), rgba(106,115,166,1), rgba(5,5,13,1)) 1 0;
+}
+
+/* -----------MISSION SECTION----------- */
+#mission-section {
+  min-height: 90vh;
+}
+
+#mission-section img {
+  width: 100%;
+  height: 70vh;
+  object-position: center;
+  object-fit: cover;
+  opacity: .5;
+}
+
+#mission-section p {
+  font-size: clamp(14px, 1.5vw, 18px);
+}
+
+#mission-section small {
+  color: rgba(182,182,227,1);
+}
+
+/* -----------SKILL SECTION----------- */
+.skill {
+  object-position: center;
+  padding: 5vh 0;
+}
+
+#skill-heading {
+  font-size: clamp(20px, 3vw, 36px);
+  color: rgba(106,115,166,1);
+  margin: 20px;
+  font-weight: 900;
+}
+
+.skill h3 {
+  font-size: clamp(18px, 3vw, 32px);
+}
+
+.skill p {
+  text-align: center;
+  font-size: clamp(12px, 1.5vw, 16px);
+  color: rgba(182,182,227,1);
+  font-weight: 100;
+}
+
+.skill-logo {
+  width: clamp(110px, 13vw, 13vw);
+  position: relative;
+  opacity: .75;
+} 
+
+.skill-logo:hover {      
+  animation: pulse;
+  animation-duration: .4s;
+}
+
+/* -----------INSPIRATION SECTION----------- */
+#carousel-inspiration .carousel-item img {  
+  opacity: .3;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  height: 65vh;
+  margin-top: 3vh;
+}
+
+#carousel-inspiration .carousel-caption {
+  margin: 0 auto 10vh;
+  text-shadow: 1px 1px rgba(5,5,13,1);
+}
+
+#carousel-inspiration .carousel-caption h5 {
+  font-size: clamp(18px, 4vw, 45px);
+  font-weight: 200;
+}
+
+#carousel-inspiration .carousel-caption p {
+  font-size: clamp(16px, 3.5vw, 38px);
+  text-align: right;
+  font-style: italic;
+  color: rgba(182,182,227,.7);
+}
+
+/* -----------CONTACT SECTION----------- */
+#contact-section {
+  height: 70vh;
+}
+
+#contact-section i {
+  margin-top: 10vh;
+  display: inline-block;
+  font-size: clamp(25px, 4.8vw, 4.8vw);
+  transition: all .5s ease-in-out;
+  color: rgba(106,115,166,1);
+}
+
+#contact-section i:hover {
+  color: rgba(182,182,227,1);
+  animation: tada;            
+  animation-duration: 1s;
+}
+
+/* -----------FOOTER----------- */
+footer {
+  padding: 30px;
+  background-color: rgba(30,32,62,1);
+  font-size: clamp(12px, 1.1vw, 1.1vw);
+}
+
+footer small {
+  font-size: clamp(10px, .9vw, .9vw);
+  font-style: italic;
+  color: rgba(106,115,166,1);
+}
